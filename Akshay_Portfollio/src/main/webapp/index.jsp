@@ -14,11 +14,10 @@
 <body>
 	<%
 	SessionFactory factory = hibernateconfig.getSessionFactory();
-	out.print(factory);
 	%>
 	<header>
 		<div class="logo">
-			<img src="img\logo.png" alt="Portfolio Logo">
+			<img src="img\man.png" alt="Portfolio Logo">
 			<h3>PORTFOLLIO</h3>
 		</div>
 		<nav>
