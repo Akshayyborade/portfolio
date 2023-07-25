@@ -13,7 +13,9 @@ html {
 	-webkit-font-smoothing: antialiased;
 }
 
-
+section {
+	margin-top: 9%;
+}
 
 header {
 	position: fixed;
@@ -297,7 +299,7 @@ svg:not(:root).svg-inline--fa {
 *About me section css
 */
 #about {
-	margin-top: 9%;
+
 	height: inherit;
 }
 
@@ -362,7 +364,7 @@ h2 {
 }
 
 p {
-	font-size: 16px;
+	font-size: 12px;
 	line-height: 1.6;
 	margin-bottom: 20px;
 	color: rgb(77, 77, 77);
@@ -403,8 +405,8 @@ p {
 }
 
 .btn--med {
-	padding: 0.8rem 2.5rem;
-	font-size: 1.4rem;
+	padding: 0.8rem 1.9rem;
+	font-size: 1.0rem;
 }
 
 .btn {
@@ -442,13 +444,26 @@ a {
 	backdrop-filter: blur(6px);
 }
 
+/*mini-Project */
+.projects__content-details-img svg {
+	filter: drop-shadow(2px 2px 6px #ff2f00);
+}
+
+.projects__content-details-text {
+	text-align: center;
+}
+
 /*Project section */
 .projects {}
 
 .projects__content {
 	display: flex;
-
-
+	/* align-content: space-between; */
+	/* text-align: justify; */
+	align-items: center;
+	/* padding: 0; */
+	gap: 30px;
+	justify-content: center;
 }
 
 .projects__content-details {
@@ -458,7 +473,7 @@ a {
 	align-items: center;
 	flex-wrap: wrap;
 	align-content: space-around;
-	width: -moz-available;
+	width: 23%;
 
 
 }
@@ -497,6 +512,44 @@ a {
 	transition: transform .3s;
 }
 
+.project-list {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	gap: 165px;
+	margin-top: 159px;
+	margin-bottom: 159px;
+}
+
+.project-img {
+	width: 25%;
+}
+
+.project-img svg {
+	width: 81%;
+	margin: 50px;
+	height: min-content;
+}
+
+.project--text {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 50%;
+}
+
+.project .btn {
+	width: fit-content;
+}
+
+.project {
+	display: flex;
+	gap: 20px;
+	height: 300px;
+}
+
 /* CONTACT US*/
 #contact {
 
@@ -512,16 +565,20 @@ a {
 	/* align-items: unset; */
 
 }
-
 .contact-content {
 	display: flex;
 	/* align-content: space-between; */
 	align-items: baseline;
-	padding: 43Px;
+	padding: 50Px;
+	gap: 171px;
 }
 
 .contact-details {
 	list-style: none;
+	display: flex;
+	flex-direction: column;
+	margin: 99px;
+	gap: 20px;
 }
 
 .contact-info {
@@ -558,23 +615,115 @@ a {
 	padding: 0%;
 }
 
-input {
-	padding: 5%;
-	width: -moz-available;
+.contact-info {
+	width: 42%;
+}
+
+.contact-info h3 {
+	font-size: x-large;
+	text-align: center;
+}
+
+.contact-details {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.contact-info p {
+	font-size: medium;
+	line-height: 1.6;
+	margin-bottom: 20px;
+	color: #777;
+	text-align: center;
+}
+
+.contact-info svg {
+	width: 10%;
+}
+
+.contact-div {
+	width: 40%;
+	display: flex;
+	justify-content: center;
+}
+
+.contact-info li {
+	display: flex;
+	
+}
+
+.contact-info a {
+	margin-top: 7px;
+	margin-left: 3%;
 
 }
 
-#message {
-	padding: 23%;
+.contact-form {
+	margin-top: 20px;
+	width:-webkit-fill-available ;
 	width: -moz-available;
-	padding-right: 180%;
+}
 
+#contact-form {
+	text-align: left;
+	height: inherit;
+	width: -webkit-fill-available;
+	display: flex;
+	flex-direction: column;
+	position: inherit;
+	margin-top: 20px;
+	width: -moz-available;
+}
+
+
+input {
+	padding: 5%;
+	width: -webkit-fill-available;
+	border: 4px solid #ff2f00;
+	width: -moz-available;
+}
+
+#message {
+	padding: 20%;
+	width: -webkit-fill-available;
+	padding-right: 0%;
+	border: 4px solid #ff2f00;
+	width: -moz-available;
 }
 
 button {
 	position: absolute;
-	bottom: -24px;
-	right: 0px;
+	bottom: auto;
+	right: inherit;
+	width: 30%;
+	border: none;
+}
+
+button svg {
+	width: 23%;
+	height: 60%;
+	/* align-items: center; */
+	/* align-content: center; */
+	position: absolute;
+	left: -3px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+footer svg {
+	width: 4%;
+}
+
+footer span {
+	margin-right: 19px;
+	margin-top: 24px;
+	margin-left: 19px;
+	font-size: larger;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -782,7 +931,7 @@ button {
 
 	#mini-project {
 		height: auto;
-		margin-top: 5%;
+
 	}
 
 	.projects__content {
@@ -859,7 +1008,7 @@ button {
 	/* contact us*/
 	#contact {
 		height: auto;
-		margin-top: 80px;
+
 	}
 
 	.contact-content {
@@ -979,7 +1128,7 @@ button {
 	footer span,
 	p {
 		margin-right: 19px;
-		margin-top: 24px;
+		margin-top: 8px;
 		margin-left: 19px;
 		font-size: larger;
 	}
